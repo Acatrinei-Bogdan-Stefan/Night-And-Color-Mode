@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="mobile-under-700">
+    <h1>Not Supported</h1>
+  </div>
+  <div id="main-body">
+
+    <nav class="nav-container">
+    <div class="nav-menu">
+      <h1>RETRO</h1>
+      <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
+      <div class="nav-ui-modes">
+        <img id="dayMode" onclick="navMode('day'); selectPack('Cancel',0,'0');" src="images/day.png" alt="">
+        <img id="nightMode" onclick="navMode('night'); selectPack('Cancel',0,'0');" src="images/night.png" alt="">
+        <img id="partyMode" onclick="navMode('party'); selectPack('Cancel',0,'0');" src="images/party.png" alt="">
+      </div>
+    </nav>
+
+    <div class="benar-container">
+      <h1>Rent a Retro Console</h1>
+      <img src="images/benar.jpeg" alt="benar">
+    </div>
+
+    <div class="text-container">
+      <div class="div-img">
+        <img src="images/nes-nintendo.png" alt="nes-nintendo">
+      </div>
+    
+      <div class="div-text">
+        <h2>Nintendo Entertainment System</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Natus aut neque voluptatibus, architecto ipsum est, rerum quos, 
+          quaerat dolor dolorem deserunt necessitatibus.
+          Nulla incidunt exercitationem ipsa unde quia praesentium quasi.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-container">
+      <div class="div-text">
+        <h2>Sega genesis</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Natus aut neque voluptatibus, architecto ipsum est, rerum quos, 
+          quaerat dolor dolorem deserunt necessitatibus.
+          Nulla incidunt exercitationem ipsa unde quia praesentium quasi.
+        </p>
+      </div>
+
+      <div class="div-img">
+        <img src="images/sega-genesis.png" alt="sega-genesis">
+      </div>
+    </div>
+
+    <div class="text-container">
+      <div class="div-img">
+        <img width="100px" src="images/sony-playstation.png" alt="nes-nintendo">
+      </div>
+    
+      <div class="div-text">
+        <h2>Sony PlayStation</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Natus aut neque voluptatibus, architecto ipsum est, rerum quos, 
+          quaerat dolor dolorem deserunt necessitatibus.
+          Nulla incidunt exercitationem ipsa unde quia praesentium quasi.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-container">
+      <div class="div-text">
+        <h2>Xbox</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Natus aut neque voluptatibus, architecto ipsum est, rerum quos, 
+          quaerat dolor dolorem deserunt necessitatibus.
+          Nulla incidunt exercitationem ipsa unde quia praesentium quasi.
+        </p>
+      </div>
+
+      <div class="div-img">
+        <img src="images/xbox.png" alt="sega-genesis">
+      </div>
+    </div>
+
+    <div class="pricing-container">
+
+      <div class="price-card">
+        <h2>Personal</h2>
+        <img class="cardImage" src="images/controller.png" alt="controller">
+        <ul>
+          <li>1 Console</li>
+          <li>1 Controller</li>
+          
+        </ul>
+        <p><span class="price-text">Price:</span> 40$</p>
+          <p><span>For more information please click  <a href="www.google.com">here</a></span></p>
+        
+        <button id="personalSelect" onClick="selectPack('Personal',1,personalSelect)">Select</button>
+      </div>
+
+      <div class="price-card">
+        <h2>Team</h2>
+        <img class="cardImage" src="images/controller.png" alt="controller">
+        <ul>
+          <li>5 Consoles</li>
+          <li>5 Controllers</li>
+          <li>5 Head Sets</li>
+        </ul>
+        <p><span class="price-text">Price:</span> 150$</p>
+        <p><span>For more information please click  <a href="www.google.com">here</a></span></p>
+        <button id="teamSelect" onClick="selectPack('Team',2,teamSelect)">Select</button>
+      </div>
+
+      <div class="price-card">
+        <h2>Enterprise</h2>
+        <img class="cardImage" src="images/controller.png" alt="controller">
+        <ul>
+          <li>15 Consoles</li>
+          <li>15 Controllers</li>
+          <li>15 Head Sets</li>
+          <li>Access to game list</li>
+        </ul>
+        <p><span class="price-text">Price:</span> 400$</p>
+        <p><span>For more information please click  <a href="www.google.com">here</a></span></p>
+        <button id="enterpriseSelect" onClick="selectPack('Enterprise',3,enterpriseSelect)">Select</button>
+      </div>
+
+    </div>
+
+    <div class="table-container">
+
+      <div class="table-card">
+      <h3>Product Table</h3>
+
+        <table>
+          <tr>
+            <th>NR.</th>
+            <th>Console Name</th>
+            <th>Price</th>
+            <th>Quantity in stock</th>
+            <th>Weight</th>
+            <th>Size (width)</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Nintendo Entertainment System</td>
+            <td>130$</td>
+            <td>20</td>
+            <td>2.27 kg</td>
+            <td>88.9 mm</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Sega genesis</td>
+            <td>100$</td>
+            <td>30</td>
+            <td>2.00 kg</td>
+            <td>98.5 mm</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>PlayStation 1</td>
+            <td>150$</td>
+            <td>15</td>
+            <td>2.60 kg</td>
+            <td>120.0 mm</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Xbox</td>
+            <td>125$</td>
+            <td>10</td>
+            <td>2.12 kg</td>
+            <td>80.5 mm</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="sign-up-container">
+
+      <form class="sign-up-card">
+        <h3>Purchase Information</h3>
+
+        <label for=""></label>
+        
+        <p>
+          <strong>Selected Pack:</strong> <span id="packData"></span><br>
+          <strong>Price:</strong> <span id="priceData"></span><br>
+          <strong>Full Name:</strong> <span id="nameData"></span><br>
+          <strong>Date of Birth:</strong> <span id="DOBData"></span><br>
+          <strong>Email Adress:</strong> <span id="emailData"></span><br>
+          <strong>Telephone:</strong> <span id="telData"></span><br>
+          <strong>Favoritr Color:</strong> <span id="colorData"></span><br>
+          <strong>Details:</strong> <span id="detailsData"></span><br>
+          <p id="infoPurchase"></p><br>
+        </p>
+
+        <div id="inputContainer" class="input-container">
+          <label for="">Full Name:</label>
+          <input autocomplete="off" type="text" id="fullName"  onkeydown="typeName()" placeholder="John Doe">
+
+          <label for="">Date of Birth:</label>
+          <input autocomplete="off" type="date" id="fullDateOfBirth" onchange="typeDateOfBirth()">
+
+          <label for="">Email Adress:</label>
+          <input autocomplete="off" type="email" id="fullEmail" onkeydown="typeEmail()" placeholder="example@provider.com">
+
+          <label for="">Telephone:</label>
+          <input autocomplete="off" type="telephone" id="fullTel" onkeydown="typeTel()" placeholder="04+9999.999.999">
+
+          <label for="">Favoritr Color:</label>
+          <input autocomplete="off" type="color" id="fullColos" onchange = "typeColor()">
+
+          <label for="">Details:</label>
+          <textarea autocomplete="off" name="" id="fullDetails" onkeydown="typeDetails()" cols="30" rows="10" placeholder="Text"></textarea>
+
+          
+        </div>
+        <div class="buttonContainer">
+          <input type="button" id="buyButton" onclick="buy()" value="Buy">
+          <input type="button" id="backButton" onclick="selectPack('Cancel',0,'0')" value="Back">
+        </div>
+
+        
+      </form>
+
+      <script src="script.js"></script>
+    </div>
+
+      <div class="footer-container">
+          <div class="footer-card">
+              <div>
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">Web design</a></li>
+                      <li><a href="#">Development</a></li>
+                      <li><a href="#">Hosting</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="#">Company</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Careers</a></li>
+                  </ul>
+              </div>
+            </div>
+              <div class="footer-text-card">
+                  <h3>Rent a Retro Console</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Corrupti quia at deleniti ex iure officia ducimus possimus 
+                    optio voluptate quidem in porro, natus animi. 
+                    Aliquam optio fugiat aspernatur veritatis quis.</p>
+                    <span class="">Rent a Retro Console © 2018</span>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
